@@ -11,6 +11,7 @@
      background: var(--color-main);
      color: var(--color-brand);
      font-family: 'Roboto';
+
  }
 
  ul {
@@ -29,11 +30,19 @@
  /* шапка */
 
  .header {
+     position: fixed;
+     top: 0;
+     width: 100%;
+     background-color: var(--color-main);
+
+
      border-bottom: 1px solid #E7E9FC;
      box-shadow:
          0px 2px 1px rgba(46, 47, 66, 0.08),
          0px 1px 1px rgba(46, 47, 66, 0.16),
          0px 1px 6px rgba(46, 47, 66, 0.08);
+
+
  }
 
  .nav-link {
@@ -51,6 +60,7 @@
  }
 
  .main-div {
+
      display: flex;
      align-items: center;
  }
@@ -81,10 +91,6 @@
      margin-left: 76px;
  }
 
- .test-link:hover,
- .test-link:focus {
-     color: var(--color-hover);
- }
 
  .test-link {
      font-style: normal;
@@ -98,6 +104,24 @@
      padding-top: 24px;
      padding-bottom: 24px;
      display: block;
+     position: relative;
+ }
+
+ .test-link:hover,
+ .test-link:focus {
+     color: var(--color-hover);
+ }
+
+ .test-link::after {
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+     content: "";
+     height: 4px;
+     background: var(--color-hover);
+     border-radius: 2px;
+     display: block;
+
  }
 
  .link .item+.item {
