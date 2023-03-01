@@ -49,7 +49,7 @@
         <section class="section-hero">
             <div class="container">
                 <h1 class="hero-tital">Effective Solutions <br> for Your Business</h1>
-                <button class="button-light" type="button">Order Service</button>
+                <button class="button-light" type="button" data-modal-open>Order Service</button>
             </div>
         </section>
 
@@ -381,14 +381,16 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" class="modal-backdrop">
+            <button type="button" class="modal-backdrop" data-modal-close>
                 <svg class="modal-backdrop-icon" width="8" heigh="8">
                     <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
                 </svg></button>
         </div>
     </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
