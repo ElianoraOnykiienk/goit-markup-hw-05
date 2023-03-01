@@ -101,6 +101,15 @@
      line-height: 1.5;
      color: var(--color-brand);
      letter-spacing: 0.02em;
+
+ }
+
+ .test-link:hover,
+ .test-link:focus {
+     color: var(--color-hover);
+ }
+
+ .item {
      transition: color var(--transition-dur-and-func),
          background-color var(--transition-dur-and-func);
 
@@ -110,12 +119,7 @@
      position: relative;
  }
 
- .test-link:hover,
- .test-link:focus {
-     color: var(--color-hover);
- }
-
- .test-link::after {
+ .item.current::after {
      position: absolute;
      bottom: 0;
      width: 100%;
@@ -167,10 +171,6 @@
      text-decoration: none;
      transition: color var(--transition-dur-and-func),
          background-color var(--transition-dur-and-func);
-
-     padding-top: 24px;
-     padding-bottom: 24px;
-     display: block;
 
  }
 
@@ -444,7 +444,10 @@
  .work {
      padding-top: 32px;
      padding-bottom: 32px;
+
  }
+
+
 
  .paragraph-link {
      text-align: center;
@@ -466,6 +469,8 @@
  .socials-icon {
      width: 16px;
      height: 16px;
+     transition: color var(--transition-dur-and-func),
+         background-color var(--transition-dur-and-func);
 
 
  }
