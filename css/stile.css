@@ -774,8 +774,8 @@
 
  }
 
- .link-box:hover .overlay,
- .link-box:focus .overlay {
+ .links-portfolio:hover .overlay,
+ .links-portfolio:focus .overlay {
      transform: translate(0, 0);
  }
 
