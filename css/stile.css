@@ -697,6 +697,44 @@
 
  }
 
+ .link-box:hover .overlay,
+ .link-box:focus .overlay {
+     transform: translate(0, 0);
+ }
+
+ .overlay {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     padding-top: 40px;
+     padding-bottom: 164px;
+     padding-left: 32px;
+     padding-right: 32px;
+     transform: translate(0, 100%);
+     transition: transform 250ms linear;
+
+     font-family: 'Roboto';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 1.5;
+     letter-spacing: 0.02em;
+     color: #F4F4FD;
+     background-color: #4D5AE5;
+
+ }
+
+
+
+ .links-portfolio-img {
+     position: relative;
+     overflow: hidden;
+
+
+ }
+
 
  .section-header {
      color: var(--color-brand);
@@ -709,10 +747,14 @@
  }
 
  .links-portfolio {
+     position: relative;
+
      cursor: pointer;
      text-decoration: none;
      color: currentColor;
      display: block;
+
+
  }
 
 
