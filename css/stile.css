@@ -102,14 +102,6 @@
      color: var(--color-brand);
      letter-spacing: 0.02em;
 
- }
-
- .test-link:hover,
- .test-link:focus {
-     color: var(--color-hover);
- }
-
- .item {
      transition: color var(--transition-dur-and-func),
          background-color var(--transition-dur-and-func);
 
@@ -117,9 +109,26 @@
      padding-bottom: 24px;
      display: block;
      position: relative;
+
+
  }
 
- .item.current::after {
+ .current {
+     color: var(--color-hover);
+ }
+
+ .test-link:hover,
+ .test-link:focus {
+     color: var(--color-hover);
+ }
+
+
+
+ .test-link.current {
+     color: var(--color-hover);
+ }
+
+ .test-link.current::after {
      position: absolute;
      bottom: 0;
      width: 100%;
@@ -128,12 +137,15 @@
      background: var(--color-hover);
      border-radius: 2px;
 
+
      display: block;
 
  }
 
  .test-link:hover:focus::after {
      opacity: 1;
+
+
  }
 
  .link .item+.item {
@@ -170,7 +182,7 @@
      color: var(--colol-secondary);
      text-decoration: none;
      transition: color var(--transition-dur-and-func),
-         background-color var(--transition-dur-and-func);
+
 
  }
 
@@ -224,21 +236,22 @@
      font-weight: 500;
      text-align: center;
      font-size: 16px;
+     cursor: pointer;
      line-height: 1.5;
      font-family: 'Roboto';
      letter-spacing: 0.04em;
      border-color: transparent;
      padding: 16px 32px;
      transition: color var(--transition-dur-and-func),
-         background-color var(--transition-dur-and-func);
+
  }
 
 
  .button-light:hover,
  .button-light:focus {
-     text-align: center;
-     background: var(--color-hover);
-     cursor: pointer;
+
+     background-color: var(--color-hover);
+
  }
 
  /*backdrop*/
@@ -274,8 +287,8 @@
 
  .modal-backdrop {
      position: absolute;
-     top: 10px;
-     right: 10px;
+     top: 24px;
+     right: 24px;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -285,26 +298,36 @@
      background-color: transparent;
      border: 1px solid rgba(0, 0, 0, 0.1);
      padding: 0;
-     background: #E7E9FC;
+     background-color: #E7E9FC;
      cursor: pointer;
      transition: border-color var(--transition-dur-and-func);
+
 
  }
 
  .modal-backdrop-icon {
      transition: fill var(--transition-dur-and-func);
 
+
+
+
  }
 
  .modal-backdrop:hover,
  .modal-backdrop:focus {
      border-color: var(--color-hover);
+     background: var(--color-hover);
+
+
  }
 
 
  .modal-backdrop:hover .modal-backdrop-icon,
  .modal-backdrop:focus .modal-backdrop-icon {
      fill: var(--color-hover);
+     background-color: #E7E9FC;
+
+
  }
 
  /* инструкция */
@@ -491,6 +514,8 @@
      border-radius: 50%;
      background: var(--color-primary);
      fill: #F4F4FD;
+     transition: color var(--transition-dur-and-func),
+         background-color var(--transition-dur-and-func);
  }
 
  .socials-item {
@@ -553,6 +578,8 @@
      border: 1px solid #8E8F99;
      border-radius: 4px;
      fill: #8E8F99;
+     transition: color var(--transition-dur-and-func),
+         background-color var(--transition-dur-and-func);
  }
 
  .customers-icons {
@@ -653,6 +680,8 @@
      border-radius: 50%;
      background: rgba(255, 255, 255, 0.1);
      fill: #F4F4FD;
+     transition: color var(--transition-dur-and-func),
+         background-color var(--transition-dur-and-func);
  }
 
  .media-icon {
@@ -701,6 +730,8 @@
      justify-content: center;
      margin-top: 0;
      margin-bottom: 72px;
+     transition: color var(--transition-dur-and-func),
+         background-color var(--transition-dur-and-func);
 
  }
 
