@@ -758,7 +758,9 @@
 
      padding: 12px 24px 12px 24px;
      transition: color var(--transition-dur-and-func),
-         background-color var(--transition-dur-and-func);
+         background-color var(--transition-dur-and-func),
+         border-color var(--transition-dur-and-func),
+         box-shadow var(--transition-dur-and-func);
 
  }
 
@@ -826,7 +828,7 @@
      padding-left: 32px;
      padding-right: 32px;
      transform: translate(0, 100%);
-     transition: color var(--transition-dur-and-func);
+     transition: transform var(--transition-dur-and-func);
 
      font-family: 'Roboto';
      font-style: normal;
@@ -862,7 +864,7 @@
 
  .links-portfolio {
      position: relative;
-     box-shadow: var(--transition-dur-and-func);
+     transition: box-shadow var(--transition-dur-and-func);
      cursor: pointer;
      text-decoration: none;
      color: currentColor;
